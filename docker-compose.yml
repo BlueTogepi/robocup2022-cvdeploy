@@ -1,0 +1,8 @@
+version: '3'
+services:
+    persontracking:
+        build:
+            context: ./person_tracking
+        container_name: container_persontracking
+        ports:
+            - 5000:5000
