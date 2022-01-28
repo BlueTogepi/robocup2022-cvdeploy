@@ -1,0 +1,3 @@
+[submodule "person-tracking"]
+	path = person-tracking
+	url = https://github.com/theAIGuysCode/yolov4-deepsort
