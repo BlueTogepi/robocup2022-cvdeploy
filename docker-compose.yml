@@ -11,6 +11,8 @@ services:
             - SOCKET_SERVERIP=host.docker.internal
             - SOCKET_PORT=4501
             - PYTHONUNBUFFERED=1
+            - CAM_WIDTH=504
+            - CAM_HEIGHT=896
         volumes:
             - "./person_tracking:/code"
         command: ["python", "-u", "server.py"]
