@@ -1,5 +1,5 @@
-FROM python:3.8
-ADD . /code
+FROM python:3.6
 WORKDIR /code
+COPY ./requirements.txt /code/
 RUN pip install -r requirements.txt
-CMD python client.py
+CMD python -u server.py
