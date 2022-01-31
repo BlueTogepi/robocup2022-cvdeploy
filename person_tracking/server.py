@@ -48,6 +48,6 @@ while True:
     data = recv_msg(conn)
     img = np.frombuffer(data, dtype=np.uint8)
     img = np.reshape(img, (CAM_WIDTH, CAM_HEIGHT, 3))
-    cv2.imwrite("test_img/received.jpg", img)
     end = time.time()
+    cv2.imwrite("test_img/received.jpg", img)
     conn.send(str(end - start).encode())
