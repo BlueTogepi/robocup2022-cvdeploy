@@ -2,7 +2,7 @@ version: '3'
 services:
     persontracking:
         build:
-            context: ./person_tracking
+            context: ./robocup2022-cv-person-tracker
         container_name: container_persontracking
         working_dir: /code
         ports:
@@ -11,8 +11,8 @@ services:
             - SOCKET_SERVERIP=host.docker.internal
             - SOCKET_PORT=4501
             - PYTHONUNBUFFERED=1
-            - CAM_WIDTH=504
-            - CAM_HEIGHT=896
+            - CAM_WIDTH=1080
+            - CAM_HEIGHT=720
         volumes:
             - "./person_tracking:/code"
         command: ["python", "-u", "server.py"]

@@ -1,3 +1,3 @@
-[submodule "person-tracking"]
-	path = person_tracking/yolov4
-	url = https://github.com/theAIGuysCode/yolov4-deepsort
+[submodule "robocup2022-cv-person-tracker"]
+	path = robocup2022-cv-person-tracker
+	url = https://github.com/palmpalmpalm/robocup2022-cv-person-tracker.git
